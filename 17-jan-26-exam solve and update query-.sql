@@ -43,4 +43,6 @@ select e.first_name,m.first_name
 from employees e join employees m
 on m.manager_id=e.employee_id;
 
+commit;
+
 

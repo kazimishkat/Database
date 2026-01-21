@@ -13,3 +13,5 @@ where last_name like 'A%'or last_name like 'J%' or last_name like 'M%'
 order by 1;
 
 select * from emp_lastname;
+
+commit;
