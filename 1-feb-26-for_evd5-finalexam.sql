@@ -6,7 +6,9 @@ salary number,
 hire_date date,
 address VARCHAR2(100),
 CONSTRAINT hr_emp1294711_eid_pk primary key (eid)
+
 );
+
 
 alter table emp1294711
 add (department_id number,dept_name varchar(50));
@@ -24,6 +26,9 @@ select ename,dept_name,salary
 from emp1294711
 where department_id=80;
 
+create view ename as 
+
+
 drop view ename;
 
 create sequence seq_emp12947_eid 
@@ -31,10 +36,18 @@ start with 1
 increment by 1 
 maxvalue 99999;
 
+create sequence seq_hr_emp_eid
+start with 1
+incement by 1
+maxvalue 9999;
+
 insert into emp1294711(eid,ename,salary,hire_date,department_id)
 (select employee_id,first_name,salary,hire_date,department_id
 from employees);
 
+insert into emp121212(eid,ename,salary,hire_Date,deptid,)
+(select employee_id,fdfdfd
+from employees)
 select * from emp1294711;
 commit;
 
